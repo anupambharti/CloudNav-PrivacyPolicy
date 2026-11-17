@@ -451,10 +451,10 @@
         <header class="hero">
             <div class="hero-copy">
                 <p class="eyebrow">CloudNav Privacy Policy</p>
-                <h1>Private location tools, built to stay on your device.</h1>
-                <p>CloudNav is an offline-first GPS utility for live coordinates, altitude, speed, heading, accuracy, saved locations, maps, and emergency-ready coordinate messages. This policy explains how the app handles that information.</p>
+                <h1>Private by default. Your journeys, your choice.</h1>
+                <p>CloudNav is an offline-first GPS utility and trip recorder. It includes optional Exploration Studio tools, free library backups, and optional private iCloud sync. This policy explains how these features handle your information.</p>
                 <div class="meta-row" aria-label="Policy summary">
-                    <span class="meta-pill">Last updated: April 14, 2026</span>
+                    <span class="meta-pill">Last updated: November 17, 2026</span>
                     <span class="meta-pill">No account required</span>
                     <span class="meta-pill">No CloudNav server storage</span>
                 </div>
@@ -465,7 +465,7 @@
                     <h2>At a glance</h2>
                     <ul class="snapshot-list">
                         <li>Location is used to show latitude, longitude, altitude, speed, heading, and accuracy.</li>
-                        <li>Saved locations and logbook entries remain stored locally on your device.</li>
+                        <li>Trips and saved places are local unless you enable private iCloud sync or choose to export or share them.</li>
                         <li>CloudNav does not sell personal information, run advertising trackers, or create user profiles.</li>
                     </ul>
                 </div>
@@ -492,7 +492,7 @@
                 <section class="highlight" id="overview">
                     <h2>Overview</h2>
                     <p><strong>CloudNav is designed to be private by default.</strong> The app does not require an account, does not track you across apps or websites, and does not save your location data to CloudNav servers.</p>
-                    <p>CloudNav uses information available on your device so it can provide precise GPS features, including live coordinates, altitude, speed, heading, accuracy, local saved locations, an interactive map view, coordinate copying and sharing, and emergency-ready location messages.</p>
+                    <p>CloudNav uses information available on your device for GPS readings, saved places, trip recording, replay, graphs, GPX export, route planning, reports, backups, and optional private iCloud sync. Core GPS tools and unlimited ordinary trips remain free. Optional lifetime Pro and voluntary tips are handled by Apple's App Store.</p>
                 </section>
 
                 <section id="information">
@@ -505,46 +505,58 @@
                         </div>
                         <div class="data-item">
                             <strong>Saved locations</strong>
-                            <span>Locations you choose to save, organize, search, copy, or view in the app.</span>
+                            <span>Locations you save, plus recorded coordinates, timestamps, altitude, speed, accuracy, trip segments, waypoint names and notes, and imported or planned routes.</span>
                         </div>
                         <div class="data-item">
                             <strong>Shared details</strong>
-                            <span>Coordinate messages or location details you choose to copy or share outside the app.</span>
+                            <span>Coordinate messages, GPX files, library backups, PDF reports, images, or videos you choose to export or share.</span>
                         </div>
                         <div class="data-item">
                             <strong>App preferences</strong>
-                            <span>Settings such as coordinate format, including decimal or degrees-minutes-seconds.</span>
+                            <span>Coordinate formats, cockpit layouts, onboarding completion, reminder choices, optional sync/widget settings, and the local count of successful Pro trial actions.</span>
                         </div>
                     </div>
                 </section>
 
                 <section id="use">
                     <h2>How CloudNav uses this information</h2>
-                    <p>CloudNav uses location-related information only to provide the features you request inside the app. This includes showing your current position, displaying altitude, speed, heading, and accuracy, saving locations locally, viewing saved locations on a map, generating emergency-ready coordinate messages, and helping you copy or share coordinates.</p>
+                    <p>CloudNav uses location-related information to provide the features you request: live GPS readings, saving places, recording and replaying trips, statistics and graphs, route planning, GPX import/export, copy-based editing, reports, and optional backup or private iCloud sync. You control recording, sharing, and whether sync is enabled.</p>
                     <p>CloudNav does not use your location information for advertising, user profiling, resale, or cross-app tracking.</p>
                 </section>
 
                 <section id="storage">
                     <h2>Storage and sharing</h2>
                     <h3>Local storage</h3>
-                    <p>Saved locations, logbook entries, and app preferences are stored locally on your device. CloudNav does not upload this information to CloudNav servers.</p>
+                    <p>Trips, GPS samples, waypoints, saved places, route plans, cockpit layouts, and preferences are stored locally. CloudNav does not operate a developer tracking or location-storage server. Editing creates copies and preserves originals. Unfinished recordings stay local and require explicit resume after recovery.</p>
+                    <h3>Optional private iCloud sync</h3>
+                    <p>Sync is off by default. If you enable it, CloudNav sends completed trips, saved places, plans, and the information within them to your private CloudKit database through Apple's iCloud service. This includes precise route coordinates, timestamps, elevations, waypoint names and notes. The data is associated with your iCloud account, is not published to other CloudNav users, and is handled under Apple's iCloud privacy terms and account settings. CloudNav does not provide developer access to your private journey library.</p>
+                    <p>Sync runs while the app is open and requires the same iCloud account, connectivity, and available iCloud storage. Unfinished recordings and cockpit layouts are not included in this sync. A local hash of the CloudKit account identifier helps prevent silently mixing different accounts; sync journals and deletion markers are used to reconcile changes. These are not used for advertising or analytics.</p>
+                    <p>Turning sync off stops subsequent synchronization but does not delete existing cloud copies. Deleting synchronized items can propagate when sync is enabled. Review your iCloud settings to manage app data stored by Apple. Keep an independent backup before deleting data or changing accounts.</p>
+                    <h3>Backups and reports</h3>
+                    <p>A full .cloudnav backup includes your local trips, saved locations, plans, and layouts, including unfinished recordings. GPX exports include track coordinates and waypoints. Reports, images, and videos can reveal location history, names, and notes. Protect exported files and share only with recipients you choose. Backup restore is additive and may preserve conflicting versions as copies. Deleting an unsynced app installation without a backup can lose local history. Restoring a purchase does not recover trips.</p>
+                    <h3>Widget sharing</h3>
+                    <p>When you enable widget sharing, CloudNav writes aggregate journey counts, distance, and active time to a local App Group shared with its widget extension. This snapshot does not contain trip titles, routes, or precise coordinates. Home Screen or Lock Screen widgets may make these totals visible to anyone who can see your screen. You can disable sharing and remove widgets.</p>
                     <h3>User-controlled sharing</h3>
                     <p>When you copy coordinates, create an emergency-ready message, or share location details, the information leaves CloudNav only through the action you choose. The destination app, message service, or recipient may handle that information under their own privacy practices.</p>
                     <h3>Device and platform services</h3>
-                    <p>CloudNav relies on your device operating system for location permission and location services. Map display or system-level services may be handled by your device platform and are subject to the privacy settings and policies that apply to your device.</p>
+                    <p>CloudNav uses Apple's Core Location, MapKit, iCloud/CloudKit, StoreKit, Files and sharing services. Map display, place-name lookup and online walking directions can send location or route requests to Apple. Some endpoint place-name lookup and directions are explicitly requested from the app. These services are governed by Apple's privacy policies and your device settings. GPS can work without mobile data; online maps and services may require connectivity.</p>
+                    <h3>Lifetime Pro and voluntary tips</h3>
+                    <p>Apple handles payments. CloudNav uses StoreKit product and verified transaction information to check Pro ownership, process optional purchases, and restore an existing lifetime unlock. It does not receive your payment-card or bank details. Pro is a non-consumable one-time purchase, not a subscription. Tips are separate repeatable consumable purchases and unlock no features. Successful Pro trial actions are counted locally; normal recordings, ordinary GPX exports, backups and sync are not trial actions. No CloudNav login is required.</p>
                 </section>
 
                 <section id="permissions">
                     <h2>Location permission</h2>
-                    <p>CloudNav needs location permission to provide live GPS data. You can grant, deny, or revoke location access from your device settings at any time. If location access is disabled, GPS features such as live coordinates, altitude, speed, heading, accuracy, and nearby map display may not work as expected.</p>
+                    <p>CloudNav requests location access when you choose to use GPS or recording, not as a requirement to finish onboarding. A user-started recording can use background location while the screen is locked. You can grant, deny, or revoke access in iPhone Settings. GPS availability depends on device and environment; force quit, reboot, permission changes or power loss can interrupt recording. Missing positions are not reconstructed.</p>
                 </section>
 
                 <section id="choices">
                     <h2>Your choices and data control</h2>
                     <ul>
                         <li>You can choose whether to allow location access through your device settings.</li>
-                        <li>You can decide which locations to save in CloudNav.</li>
-                        <li>You can remove saved locations from the app when you no longer need them.</li>
+                        <li>You can decide which locations, trips and plans to save, and delete items you no longer need.</li>
+                        <li>You can leave private iCloud sync off, disable it later, and manage existing cloud data in iCloud settings.</li>
+                        <li>You can export a backup before reinstalling or switching phones, and restore it through Backup &amp; iCloud.</li>
+                        <li>You can control widget sharing, reminder snoozes and app preferences without creating a CloudNav account.</li>
                         <li>You can choose when to copy, share, or send coordinate details outside the app.</li>
                     </ul>
                 </section>
@@ -575,4 +587,4 @@
         </footer>
     </div>
 </body>
-</html>
+</html>    
